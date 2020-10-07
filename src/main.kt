@@ -4,7 +4,8 @@ fun main() {
     val bruno = Funcionario(
         nome = "Bruno",
         cpf = "111.111.111-11",
-        salario = 1000.0
+        salario = 1000.0,
+        tipo = 2
     )
 
     println("nome ${bruno.nome}")
