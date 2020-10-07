@@ -17,4 +17,10 @@ class Funcionario(
             }
         }
     }
+
+    fun autentica(senha: Int){
+        if(tipo == 1){
+            // pode autenticar
+        }
+    }
 }
