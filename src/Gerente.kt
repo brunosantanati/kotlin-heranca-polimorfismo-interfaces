@@ -1,13 +1,19 @@
-class Gerente(
-    nome: String,
-    cpf: String,
-    salario: Double,
+class Gerente : Funcionario {
+
     val senha: Int
-) : Funcionario(
-    nome = nome,
-    cpf = cpf,
-    salario = salario
-){
+
+    constructor(
+        nome: String,
+        cpf: String,
+        salario: Double,
+        senha: Int
+    ) : super(
+        nome = nome,
+        cpf = cpf,
+        salario = salario
+    ) {
+        this.senha = senha
+    }
 
     override val bonificacao: Double
         get() {
