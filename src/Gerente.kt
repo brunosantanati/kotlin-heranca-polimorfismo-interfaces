@@ -17,6 +17,7 @@ class Gerente : Funcionario {
 
     override val bonificacao: Double
         get() {
+            //println("bonificação gerente")
             return super.bonificacao + salario
         }
 
