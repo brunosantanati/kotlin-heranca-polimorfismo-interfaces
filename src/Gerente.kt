@@ -1,4 +1,4 @@
-class Gerente : FuncionarioAdmin, Autenticavel {
+class Gerente : FuncionarioAdmin {
 
     constructor(
         nome: String,
@@ -16,8 +16,4 @@ class Gerente : FuncionarioAdmin, Autenticavel {
         get() {
             return salario + salario
         }
-
-    override fun autentica(senha: Int): Boolean {
-        return super<Autenticavel>.autentica(senha)
-    }
 }
