@@ -9,7 +9,8 @@ abstract class FuncionarioAdmin(
     salario = salario
 ){
 
-    fun autentica(senha: Int): Boolean {
+    open fun autentica(senha: Int): Boolean {
+        println("autentica funcionário admin")
         if(this.senha == senha){
             return true
         }
