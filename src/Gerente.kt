@@ -1,6 +1,4 @@
-class Gerente : Funcionario {
-
-    val senha: Int
+class Gerente : FuncionarioAdmin {
 
     constructor(
         nome: String,
@@ -10,20 +8,12 @@ class Gerente : Funcionario {
     ) : super(
         nome = nome,
         cpf = cpf,
-        salario = salario
-    ) {
-        this.senha = senha
-    }
+        salario = salario,
+        senha = senha
+    )
 
     override val bonificacao: Double
         get() {
             return salario + salario
         }
-
-    fun autentica(senha: Int): Boolean {
-        if(this.senha == senha){
-            return true
-        }
-        return false
-    }
 }
