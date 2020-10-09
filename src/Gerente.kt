@@ -1,4 +1,4 @@
-class Gerente : FuncionarioAdmin {
+class Gerente : FuncionarioAdmin, Autenticavel {
 
     constructor(
         nome: String,
